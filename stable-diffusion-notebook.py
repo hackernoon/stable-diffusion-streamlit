@@ -18,13 +18,13 @@
 # In[2]:
 
 
-get_ipython().system('python login.py --token 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')
+# get_ipython().system('python login.py --token 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')
 
 
 # In[3]:
 
 
-get_ipython().system('mkdir outputs')
+# get_ipython().system('mkdir outputs')
 
 
 # # Inference
