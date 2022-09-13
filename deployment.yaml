@@ -1,0 +1,22 @@
+image: paperspace/gradient-base:pt112-tf29-jax0314-py39-20220803
+port: 8501
+command:
+  - /bin/sh
+  - '-c'
+  - |
+    cd /opt/repos/repo
+    pip install -r requirements.txt
+    streamlit run app.py
+#models:
+  #- id: mo6l0m1nq4zqrp
+    #path: /opt/models
+repositories:
+  dataset: dstrhwg9u40zodj
+  mountPath: /opt/repos
+  repositories:
+    - url: https://github.com/hackernoon/stable-diffusion-streamlit
+      name: repo
+      ref: main
+resources:
+  replicas: 0
+  instanceType: C4
