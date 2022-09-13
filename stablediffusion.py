@@ -23,7 +23,7 @@
 def run(promp):
     import os
     from pathlib import Path
-    os.mkdir('/root/.huggingface')
+    os.makedirs('/root/.huggingface', exist_ok=True)
 
     Path('/root/.huggingface/token').touch()
     with open('/root/.huggingface/token', 'w') as f:
