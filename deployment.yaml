@@ -15,5 +15,6 @@ repositories:
       name: repo
       ref: main
 resources:
-  replicas: 0
+  replicas: 1
   instanceType: C4
+
