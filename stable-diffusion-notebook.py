@@ -20,6 +20,14 @@
 
 # get_ipython().system('python login.py --token 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')
 
+import os
+from pathlib import Path
+os.mkdir('/root/.huggingface')
+
+Path('/root/.huggingface/token').touch()
+with open('/root/.huggingface/token', 'w') as f:
+    f.write(os.getenv("HUGGING_FACE"))
+
 
 # In[3]:
 
