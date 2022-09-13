@@ -7,9 +7,6 @@ command:
     cd /opt/repos/repo
     pip install -r requirements.txt
     streamlit run app.py
-#models:
-  #- id: mo6l0m1nq4zqrp
-    #path: /opt/models
 repositories:
   dataset: dstrhwg9u40zodj
   mountPath: /opt/repos
